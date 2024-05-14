@@ -51,4 +51,63 @@ public class InputTest {
     public void IntegerToRoman_1000_to_M() {
         assert(IntegerToRoman.convert(1000).equals("M"));
     }
+    @Test
+    public void RomanPrinter_I() {     
+        String IArt = " _____ \n|_   _|\n  | |  \n  | |  \n _| |_ \n|_____|\n";
+        assertEquals(RomanPrinter.print(1),(IArt));
+    }
+    @Test
+    public void RomanPrinter_V() {
+        String VArt = "__      __\n\\ \\    / /\n \\ \\  / / \n  \\ \\/ /  \n   \\  /   \n    \\/    \n";
+        assertEquals(RomanPrinter.print(5),(VArt));
+    }
+    @Test
+    public void RomanPrinter_X() {
+        String XArt = "__  __\n\\ \\/ /\n \\  / \n  ><  \n /  \\ \n/_/\\_\\\n";
+        assertEquals(RomanPrinter.print(10),(XArt));
+    }
+    @Test
+    public void RomanPrinter_L() {
+        String LArt = " _    \n| |   \n| |   \n| |   \n| |__ \n|____|\n";
+        assertEquals(RomanPrinter.print(50),(LArt));
+    }
+    @Test
+    public void RomanPrinter_C() {
+        String CArt = "  ____  \n / ___| \n| |     \n| |     \n| |___  \n \\____| \n";
+        assertEquals(RomanPrinter.print(100),(CArt));
+    }
+    @Test
+    public void RomanPrinter_D() {
+        String DArt = " ____  \n|  _ \\ \n| | | |\n| | | |\n| |_| |\n|____/ \n";
+        assertEquals(RomanPrinter.print(500),(DArt));
+    }
+    @Test
+    public void RomanPrinter_M() {
+        String MArt = " __  __ \n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n|_|  |_|\n";
+        assertEquals(RomanPrinter.print(1000),(MArt));
+    }
+    @Test
+    public void TestClassSecond() {
+        try{
+            RomanPrinter RP = new RomanPrinter();
+        } catch (Exception e) {
+            assert(false);
+        }
+    }
+    @Test
+    public void TestNumber() {
+        assert(IntegerToRoman.convert(1234).equals("MCCXXXIV"));
+    }
+    @Test
+    public void TestEmptyString() {
+        assert(IntegerToRoman.convert(0).equals(""));
+    }
+    @Test
+    public void NumberIsOver20000() {
+        assert(IntegerToRoman.convert(10001).equals("NULL"));
+    }
+    /*@Test
+    public void TestNumberNegative() {
+        assert(IntegerToRoman.convert(-1234).equals("-MCCXXXIV"));
+    }*/
 }
