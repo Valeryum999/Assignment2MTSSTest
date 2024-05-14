@@ -103,7 +103,7 @@ public class InputTest {
         assert(IntegerToRoman.convert(0).equals(""));
     }
     @Test
-    public void NumberIsOver20000() {
+    public void NumberIsOver10000() {
         assert(IntegerToRoman.convert(10001).equals("Invalid Roman Number Value"));
     }
     /*@Test
