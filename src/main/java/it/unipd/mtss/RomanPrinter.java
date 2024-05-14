@@ -9,6 +9,9 @@ public class RomanPrinter {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
     private static String printAsciiArt(String romanNumber){
+        if(romanNumber.equals("Invalid Roman Number Value")){
+            return "Invalid Roman Number Value";
+        }
         String[] I = {" _____ ",
                       "|_   _|",
                       "  | |  ",
@@ -111,8 +114,6 @@ public class RomanPrinter {
                     tmp_result[3] += I[3];
                     tmp_result[4] += I[4];
                     tmp_result[5] += I[5];
-                    break;
-                default:
                     break;
             }
         }

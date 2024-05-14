@@ -110,4 +110,8 @@ public class InputTest {
     public void TestNumberNegative() {
         assert(IntegerToRoman.convert(-1234).equals("Invalid Roman Number Value"));
     }
+    @Test
+    public void TestDefaultSwitchCase() {
+        assert(RomanPrinter.print(-1234).equals("Invalid Roman Number Value"));
+    }
 }
