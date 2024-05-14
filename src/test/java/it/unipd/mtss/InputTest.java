@@ -86,4 +86,13 @@ public class InputTest {
         String MArt = " __  __ \n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n|_|  |_|\n";
         assertEquals(RomanPrinter.print(1000),(MArt));
     }
+    @Test
+    public void TestClassSecond() {
+        try{
+            RomanPrinter RP = new RomanPrinter();
+        } catch (Exception e) {
+            assert(false);
+        }
+    }
+
 }
