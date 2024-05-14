@@ -94,5 +94,8 @@ public class InputTest {
             assert(false);
         }
     }
-
+    @Test
+    public void TestNumber() {
+        assert(IntegerToRoman.convert(1234).equals("MCCXXXIV"));
+    }
 }
