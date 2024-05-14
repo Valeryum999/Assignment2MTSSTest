@@ -1,0 +1,12 @@
+////////////////////////////////////////////////////////////////////
+// Valeri Mihail Belenkov 2068232
+// Matteo Piron 2076044
+////////////////////////////////////////////////////////////////////
+
+package it.unipd.mtss;
+
+public class Sesso {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
