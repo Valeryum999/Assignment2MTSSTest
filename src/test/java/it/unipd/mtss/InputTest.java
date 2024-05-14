@@ -106,8 +106,8 @@ public class InputTest {
     public void NumberIsOver10000() {
         assert(IntegerToRoman.convert(10001).equals("Invalid Roman Number Value"));
     }
-    /*@Test
+    @Test
     public void TestNumberNegative() {
-        assert(IntegerToRoman.convert(-1234).equals("-MCCXXXIV"));
-    }*/
+        assert(IntegerToRoman.convert(-1234).equals("Invalid Roman Number Value"));
+    }
 }
