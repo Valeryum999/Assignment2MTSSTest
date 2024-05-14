@@ -98,4 +98,12 @@ public class InputTest {
     public void TestNumber() {
         assert(IntegerToRoman.convert(1234).equals("MCCXXXIV"));
     }
+    @Test
+    public void TestEmptyString() {
+        assert(IntegerToRoman.convert(0).equals(""));
+    }
+    /*@Test
+    public void TestNumberNegative() {
+        assert(IntegerToRoman.convert(-1234).equals("-MCCXXXIV"));
+    }*/
 }
