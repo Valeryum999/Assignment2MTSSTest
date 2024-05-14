@@ -104,7 +104,7 @@ public class InputTest {
     }
     @Test
     public void NumberIsOver20000() {
-        assert(IntegerToRoman.convert(10001).equals("NULL"));
+        assert(IntegerToRoman.convert(10001).equals("Invalid Roman Number Value"));
     }
     /*@Test
     public void TestNumberNegative() {
