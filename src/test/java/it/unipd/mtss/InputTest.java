@@ -13,10 +13,19 @@ public class InputTest {
     public void BasicTest() {
         assert(1 == 1);
     }
-
+    
+    @Test
+    public void TestClass() {
+        try{
+            IntegerToRoman ITR = new IntegerToRoman();
+        } catch (Exception e) {
+            assert(false);
+        }
+    }
+    
     @Test
     public void IntegerToRoman_1_to_I() {
-        assert(IntegerToRoman.convert(1).equals("I"));
+        assertEquals(IntegerToRoman.convert(1),"I");
     }
     @Test
     public void IntegerToRoman_5_to_V() {
