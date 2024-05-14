@@ -102,6 +102,10 @@ public class InputTest {
     public void TestEmptyString() {
         assert(IntegerToRoman.convert(0).equals(""));
     }
+    @Test
+    public void NumberIsOver20000() {
+        assert(IntegerToRoman.convert(10001).equals("NULL"));
+    }
     /*@Test
     public void TestNumberNegative() {
         assert(IntegerToRoman.convert(-1234).equals("-MCCXXXIV"));
