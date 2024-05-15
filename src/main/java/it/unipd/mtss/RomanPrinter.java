@@ -115,6 +115,8 @@ public class RomanPrinter {
                     tmp_result[4] += I[4];
                     tmp_result[5] += I[5];
                     break;
+                default:
+                    return "";
             }
         }
     

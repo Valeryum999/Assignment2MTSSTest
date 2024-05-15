@@ -100,7 +100,7 @@ public class InputTest {
     }
     @Test
     public void TestEmptyString() {
-        assert(IntegerToRoman.convert(0).equals(""));
+        assert(IntegerToRoman.convert(0).equals("0"));
     }
     @Test
     public void NumberIsOver10000() {
@@ -111,7 +111,11 @@ public class InputTest {
         assert(IntegerToRoman.convert(-1234).equals("Invalid Roman Number Value"));
     }
     @Test
-    public void TestDefaultSwitchCase() {
+    public void TestSwitchCase() {
         assert(RomanPrinter.print(-1234).equals("Invalid Roman Number Value"));
+    }
+    @Test
+    public void TestDefaultSwitchCase() {
+        assert(RomanPrinter.print(0).equals(""));
     }
 }
